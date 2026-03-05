@@ -323,8 +323,3 @@ with st.expander("Developer notes / how to extend"):
 - Add province-specific rebates (e.g., Ontario first-time buyer rebate, Toronto rebate, BC exemptions, etc.).
 - Add municipal deed transfer rate lookup tables (e.g., Nova Scotia municipalities).
 - Add special taxes (e.g., anti-flipping rules, speculation/vacancy taxes) if you specify the exact program you want.
-
-**Run**
-```bash
-pip install streamlit
-streamlit run app.py
