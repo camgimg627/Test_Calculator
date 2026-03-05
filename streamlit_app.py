@@ -316,10 +316,10 @@ if notes:
 
 st.divider()
 
-with st.expander("Developer notes / how to extend"):
-    st.markdown(
-        """
-**How to extend this app**
-- Add province-specific rebates (e.g., Ontario first-time buyer rebate, Toronto rebate, BC exemptions, etc.).
-- Add municipal deed transfer rate lookup tables (e.g., Nova Scotia municipalities).
-- Add special taxes (e.g., anti-flipping rules, speculation/vacancy taxes) if you specify the exact program you want.
+## with st.expander("Developer notes / how to extend"):
+#    st.markdown(
+#        """
+# **How to extend this app**
+# - Add province-specific rebates (e.g., Ontario first-time buyer rebate, Toronto rebate, BC exemptions, etc.).
+# - Add municipal deed transfer rate lookup tables (e.g., Nova Scotia municipalities).
+# - Add special taxes (e.g., anti-flipping rules, speculation/vacancy taxes) if you specify the exact program you want.
