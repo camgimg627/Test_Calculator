@@ -1,0 +1,36 @@
+.git
+.vercel
+.VirtualBox
+.agents
+.cache
+.codex
+.config
+.local
+.ssh
+.venv
+AppData
+Application Data
+Contacts
+Cookies
+Documents
+Downloads
+Favorites
+iCloudDrive
+iCloudPhotos
+IntelGraphicsProfiles
+Library
+Links
+Local Settings
+Music
+My Documents
+NTUSER.DAT*
+OneDrive
+Pictures
+Recent
+Saved Games
+Searches
+SendTo
+Start Menu
+Videos
+VirtualBox VMs
+node_modules

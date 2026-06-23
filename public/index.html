@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canada Land Transfer Tax Calculator</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="calculator" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow">Canada closing-cost estimate</p>
+          <h1 id="page-title">Land Transfer Tax Calculator</h1>
+          <p>Estimate common provincial, territorial, and Toronto municipal land transfer taxes before a purchase.</p>
+        </div>
+
+        <form class="panel" id="calculator-form">
+          <label>
+            Province or territory
+            <select id="province" name="province"></select>
+          </label>
+
+          <label>
+            City
+            <input id="city" name="city" type="text" placeholder="Toronto, Vancouver, Halifax">
+          </label>
+
+          <label class="wide">
+            Purchase price
+            <input id="purchase-price" name="purchasePrice" type="number" min="0" step="10000" value="750000">
+          </label>
+
+          <details class="wide">
+            <summary>Optional details</summary>
+            <div class="options-grid">
+              <label>
+                Nova Scotia rate (%)
+                <input id="ns-rate" name="nsRate" type="number" min="0" max="5" step="0.1" value="1.5">
+              </label>
+
+              <label>
+                NL proxy rate (%)
+                <input id="nl-rate" name="nlRate" type="number" min="0" max="2" step="0.05" value="0.4">
+              </label>
+
+              <label class="check-row">
+                <input id="first-time-buyer" name="isFirstTimeBuyer" type="checkbox">
+                First-time buyer
+              </label>
+
+              <label class="check-row">
+                <input id="bc-foreign-buyer" name="bcForeignBuyer" type="checkbox">
+                BC foreign buyer add-on
+              </label>
+
+              <label class="wide">
+                Sale price
+                <input id="sale-price" name="salePrice" type="number" min="0" step="10000" placeholder="Optional">
+              </label>
+            </div>
+          </details>
+        </form>
+
+        <section class="results" aria-live="polite" aria-label="Estimated taxes">
+          <article>
+            <span>Province / Territory</span>
+            <strong id="province-tax">$0.00</strong>
+          </article>
+          <article>
+            <span>Municipal / Additional</span>
+            <strong id="municipal-tax">$0.00</strong>
+          </article>
+          <article>
+            <span>Total Estimated</span>
+            <strong id="total-tax">$0.00</strong>
+          </article>
+        </section>
+
+        <section class="notes-panel" aria-labelledby="notes-title">
+          <h2 id="notes-title">Notes</h2>
+          <ul id="notes"></ul>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
